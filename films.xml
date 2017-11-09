@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<films>
+    <film>
+        <title value = "Iron Man"/>
+        <abstract value = "Iron Man is a 2008 American superhero film based on the Marvel Comics character of the same name, produced by Marvel Studios and distributed by Paramount Pictures.1 It is the first film in the Marvel Cinematic Universe."/>
+        <actorList>
+            <ausername value="01" />
+            <ausername value="02" />
+        </actorList>
+    </film>
+    <film>
+        <title value = "Spider-Man: Homecoming"/>
+        <abstract value = "Spider-Man: Homecoming is a 2017 American superhero film based on the Marvel Comics character Spider-Man, co-produced by Columbia Pictures and Marvel Studios, and distributed by Sony Pictures Releasing. It is the second Spider-Man film reboot and the sixteenth film of the Marvel Cinematic Universe (MCU)."/>
+        <actorList>
+            <ausername value="03" />
+            <ausername value="01" />
+            <ausername value="04" />
+        </actorList>
+    </film>
+    <film>
+        <title value = "The Avengers"/>
+        <abstract value = "Marvel's The Avengers or simply The Avengers, is a 2012 American superhero film based on the Marvel Comics superhero team of the same name, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures.1 It is the sixth film in the Marvel Cinematic Universe."/>
+        <actorList>
+            <ausername value="01" />
+            <ausername value="05" />
+            <ausername value="06" />
+            <ausername value="07" />
+            <ausername value="08" />
+        </actorList>
+    </film>
+
+    <actor>
+        <name value="Robert Downey Jr" />
+        <username value="01"/>
+        <cname value="USA" />
+    </actor>
+    <actor>
+        <name value="Terrence Howard" />
+        <username value="02"/>
+        <cname value="USA" />
+    </actor>
+    <actor>
+        <name value="Tom Holland" />
+        <username value="03"/>
+        <cname value="UK" />
+    </actor>
+    <actor>
+        <name value="Marisa Tomei" />
+        <username value="04"/>
+        <cname value="USA" />
+    </actor>
+    <actor>
+        <name value="Tom Hiddleston" />
+        <username value="05"/>
+        <cname value="UK" />
+    </actor>
+    <actor>
+        <name value="Samuel L. Jackson" />
+        <username value="06"/>
+        <cname value="USA" />
+    </actor>
+    <actor>
+        <name value="Chris Hemsworth" />
+        <username value="07"/>
+        <cname value="Australia" />
+    </actor>
+    <actor>
+        <name value="Mark Ruffalo" />
+        <username value="08"/>
+        <cname value="USA" />
+    </actor>
+  
+    <country>
+        <name value="USA" />
+        <continent value="North America" />
+    </country>
+    <country>
+        <name value="UK" />
+        <continent value="Europe" />
+    </country>
+    <country>
+        <name value="Australia" />
+        <continent value="Australia" />
+    </country>
+   
+</films>

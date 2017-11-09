@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="films">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                    <xs:element ref="film" />
+                    <xs:element ref="actor" />
+                    <xs:element ref="country" />
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element> 
+    <xs:element name="film">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="title">
+                    <xs:complexType>
+                        <xs:attribute name="value" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="abstract">
+                    <xs:complexType>
+                        <xs:attribute name="value" use="optional"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element ref="actorList"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="actorList">
+        <xs:complexType>
+            <xs:group ref="authorList" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:group name="actorList">
+        <xs:sequence>
+            <xs:element name="ausername">
+                <xs:complexType>
+                    <xs:attribute name="value" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+    
+    <xs:element name="actor">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name">
+                    <xs:complexType>
+                        <xs:attribute name="value" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="username">
+                    <xs:complexType>
+                        <xs:attribute name="value" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="cname">
+                    <xs:complexType>
+                        <xs:attribute name="value" use="optional"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="country">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name">
+                    <xs:complexType>
+                        <xs:attribute name="value" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="continent">
+                    <xs:complexType>
+                        <xs:attribute name="value" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>
